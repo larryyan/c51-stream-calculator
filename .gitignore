@@ -1,0 +1,54 @@
+# --- Keil 编译输出文件 (Objects & Listings) ---
+# 忽略所有生成的对象文件、库文件和可执行文件
+Objects/
+Listings/
+build/
+bin/
+
+# 忽略具体的 Keil 中间扩展名
+*.obj
+*.o
+*.lib
+*.hex
+*.bin
+*.axf
+*.elf
+*.lnp
+*.m51
+*.lst
+*.map
+*.htx
+*.build_log.htm
+*.dep
+*.bak
+*.__i
+*.pbi
+*.crf
+*.d
+*.i
+
+# 忽略 puml 文件
+*.puml
+
+# --- Keil 用户特定配置文件 ---
+# 忽略本地窗口布局、调试配置等个人化文件
+*.uvgui.*
+*.uvguix.*
+*.uvopt
+*.uvoptx
+*.uvproj.user
+
+# --- 编辑器与系统文件 ---
+# VS Code 配置
+.vscode/
+*.code-workspace
+
+# EIDE 编辑器配置
+.eide/
+
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
+
+# --- 格式化工具 ---
+.clang-format

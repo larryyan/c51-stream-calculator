@@ -1,0 +1,19 @@
+# 统一换行符
+*.c       text eol=lf
+*.h       text eol=lf
+*.puml    text eol=lf
+*.md      text eol=lf
+
+# 优化统计：隐藏非代码文件
+*.puml    linguist-detectable=false
+Docs/* linguist-documentation=true
+
+# 优化统计：隐藏第三方或生成文件
+Drivers/* linguist-vendored=true
+Objects/* linguist-vendored=true
+Listings/* linguist-vendored=true
+
+# 处理二进制工程文件
+*.uvproj  binary
+*.uvopt   binary
+*.hex     binary
